@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Filter-Search Project</title>
+  </head>
+  <body>
+    <section>
+        <section class="cart-center">
+            <section class="cart-modal">
+                <div class="cart-content">
+                    <img src="/assets/pics/cart.png" alt="" class="cartimg">
+                    <img src="/assets/pics/product-1.jpg" alt="" class="cart-modal-img">
+                    <div class="one">
+                        <div class="cart-desc">
+                            <h5 class="cart-title">New Balance</h5>
+                            <span class="product-price">$98</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            <span>0</span>
+                            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-content">
+                    <img src="/assets/pics/product-1.jpg" alt="" class="cart-modal-img">
+                    <div class="one">
+                        <div class="cart-desc">
+                            <h5 class="cart-title">New Balance</h5>
+                            <span class="product-price">$98</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            <span>0</span>
+                            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-footer-desc">
+                        <p>Total price: $400</p>
+                        <div>
+                            <button class="btn-tertiary cancel">cancel</button>
+                            <button class="btn-tertiary submit">submit</button>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="checkbox">I agree to &nbsp;<a href="#">Terms & Conditions.</a></label>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="overlay"></div>
+    </section>
+    <header>
+        <nav class="nav">
+            <div class="nav-icons">
+                <div class="nav__toggler">
+                    <div class="bar bar-one"></div>
+                    <div class="bar bar-two"></div>
+                    <div class="bar bar-three"></div>
+                </div>
+                <img src="/assets/pics/login.png" alt="" class="user">
+                <div>
+                    <img src="/assets/pics/cart.png" alt="" class="cart">
+                    <span class="cart-items">0</span>
+                </div>
+            </div>
+            <div>
+                <h3>Filter-Search Project</h3>
+            </div>
+        </nav>
+    </header>
+    <section class="main-section">
+        <section>
+            <div class="sidebar">
+                <div class="side-bar">
+                    <div class="search-input">
+                        <h3>Search Keyword</h3>
+                        <div class="searchicon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <input id="search" type="search" placeholder="Search...">
+                    </div>
+                    <a href="#" class="btn btn-primary" data-filter="" >All</a>
+                    <a href="#" class="btn btn-primary" data-filter="boots" >Boots</a>
+                    <a href="#" class="btn btn-primary" data-filter="sandals" >Sandals</a>
+                    <a href="#" class="btn btn-primary" data-filter="sneakers" >Sneakers</a>
+                    <a href="#" class="btn btn-primary" data-filter="mid-heels" >Mid-heels</a>
+                </div>
+            </div>
+        </section>
+        <section class="products-container">
+            <div class="products">
+                <!-- <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-1.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">New Balance</h5>
+                            <span class="product-price">$98</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-2.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Classic Sneakers</h5>
+                            <span class="product-price">$34</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-3.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Reebok</h5>
+                            <span class="product-price">$70</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-4.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Orange Sneakers</h5>
+                            <span class="product-price">$59</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-5.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Zaoinin Slingbacks</h5>
+                            <span class="product-price">$60</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-6.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Red Allstar</h5>
+                            <span class="product-price">$50</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-7.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Champion Rally</h5>
+                            <span class="product-price">$78</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-8.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Pink Boots</h5>
+                            <span class="product-price">$110</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-9.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Dynasty Combat Boots</h5>
+                            <span class="product-price">$140</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-10.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Dr. Martin Boots</h5>
+                            <span class="product-price">$88</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-11.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Knee-High Leather Boots</h5>
+                            <span class="product-price">$99</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-12.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Classic Vans</h5>
+                            <span class="product-price">$60</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-13.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Trainer's Shoes</h5>
+                            <span class="product-price">$132</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-14.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">YEezy Slide</h5>
+                            <span class="product-price">$42</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-15.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Strappy Cross</h5>
+                            <span class="product-price">$21</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-16.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Crochet Lace Flats</h5>
+                            <span class="product-price">$86</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-17.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Ryka Sandals</h5>
+                            <span class="product-price">$40</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-18.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Rilista Slingbacks</h5>
+                            <span class="product-price">$53</span>                    
+                        </div>
+                    </div>
+                </div>                
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-19.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">nine west heels</h5>
+                            <span class="product-price">$250</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-20.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">Joie Reno</h5>
+                            <span class="product-price">$110</span>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="single-product">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="image">
+                                <img src="/assets/pics/product-21.jpg" alt="" class="product-img">
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <h5 class="product-title">H&M Sandals</h5>
+                            <span class="product-price">$45</span>                    
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </section>
+    <section>
+        <section class="login-box">
+            <div class="box">
+                <img src="/assets/pics/login.png" alt="" class="userimg">
+                    <div class="user-box">
+                        <label class="required" for="username">Email</label>
+                        <input type="email" placeholder="type your email...">
+                        <label class="required" for="password">Password</label>
+                        <input type="password" placeholder="type your password...">
+                    </div>
+                    <button class="btn-secondary submit">Login</button>
+                    <a href="#">forgot password?</a>
+                <div class="create-account">
+                    <p>You don't have an account yet? <a href="#">create account</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="backdrop"></div>
+    </section>
+    <footer>
+        <div class="main-footer">
+            <div class="footer-items">
+                <div class="footer__item">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Customer Support</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="footer__icons">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script type="module" src="/index.js"></script>
+</html>

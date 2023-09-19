@@ -1,0 +1,151 @@
+{
+    "items":[
+        {
+            "id": 1,
+            "title": "New Balance",
+            "class": "sneakers",
+            "price" : 98,
+            "image" : "./assets/pics/product-1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Classic sneakers",
+            "class": "sneakers",
+            "price" : 34,
+            "image" : "./assets/pics/product-2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Reebok",
+            "class": "sneakers",
+            "price" : 70,
+            "image" : "./assets/pics/product-3.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Orange Sneakers",
+            "class": "sneakers",
+            "price" : 59,
+            "image" : "./assets/pics/product-4.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Zaoinin Slingbacks",
+            "class": "sandals",
+            "price" : 60,
+            "image" : "./assets/pics/product-5.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Red Allstar",
+            "class": "sneakers",
+            "price" : 50,
+            "image" : "./assets/pics/product-6.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Champion Rally",
+            "class": "sneakers",
+            "price" : 78,
+            "image" : "./assets/pics/product-7.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Pink Boots",
+            "class": "boots",
+            "price" : 110,
+            "image" : "./assets/pics/product-8.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Dynasty Combat Boots",
+            "class": "boots",
+            "price" : 140,
+            "image" : "./assets/pics/product-9.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Dr. Martin Boots",
+            "class": "boots",
+            "price" : 88,
+            "image" : "./assets/pics/product-10.jpg"
+        },
+        {
+            "id": 11,
+            "title": "Knee-High Leather Boots",
+            "class": "boots",
+            "price" : 99,
+            "image" : "./assets/pics/product-11.jpg"
+        },
+        {
+            "id": 12,
+            "title": "Classic Vans",
+            "class": "sneakers",
+            "price" : 60,
+            "image" : "./assets/pics/product-12.jpg"
+        },
+        {
+            "id": 13,
+            "title": "Trainer's Shoes",
+            "class": "sneakers",
+            "price" : 132,
+            "image" : "./assets/pics/product-13.jpg"
+        },
+        {
+            "id": 14,
+            "title": "YEezy Slide",
+            "class": "sandals",
+            "price" : 42,
+            "image" : "./assets/pics/product-14.jpg"
+        },
+        {
+            "id": 15,
+            "title": "Strappy Cross",
+            "class": "sandals",
+            "price" : 21,
+            "image" : "./assets/pics/product-15.jpg"
+        },
+        {
+            "id": 16,
+            "title": "Crochet Lace Flats",
+            "class": "sandals",
+            "price" : 86,
+            "image" : "./assets/pics/product-16.jpg"
+        },
+        {
+            "id": 17,
+            "title": "Ryka Sandals",
+            "class": "mid-heels",
+            "price" : 40,
+            "image" : "./assets/pics/product-17.jpg"
+        },
+        {
+            "id": 18,
+            "title": "Rilista Slingbacks",
+            "class": "mid-heels",
+            "price" : 53,
+            "image" : "./assets/pics/product-18.jpg"
+        },
+        {
+            "id": 19,
+            "title": "nine west heels",
+            "class": "mid-heels",
+            "price" : 250,
+            "image" : "./assets/pics/product-19.jpg"
+        },
+        {
+            "id": 20,
+            "title": "Joie Reno",
+            "class": "mid-heels",
+            "price" : 110,
+            "image" : "./assets/pics/product-20.jpg"
+        },
+        {
+            "id": 21,
+            "title": "H&M Sandals",
+            "class": "sandals",
+            "price" : 45,
+            "image" : "./assets/pics/product-21.jpg"
+        }
+    ]
+}
