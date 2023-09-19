@@ -140,27 +140,15 @@ btns.forEach((btn) => {
       renderBasedOnClass(allProductsdata, filters);
     });
 });
-//JSON Server module
-import { create, router as _router, defaults, rewriter } from "json-server";
-const server = create();
-const router = _router("db/db.json");
 
-// Make sure to use the default middleware
-const middlewares = defaults();
+
+const jsonServer = require("json-server"); // importing json-server library
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 8080; //  chose port from here like 8080, 3001
 
 server.use(middlewares);
-// Add this before server.use(router)
-server.use(
- // Add custom route here if needed
- rewriter({
-  "/api/*": "/$1",
- })
-);
 server.use(router);
-// Listen to port
-server.listen(3000, () => {
- console.log("JSON Server is running");
-});
 
-// Export the Server API
-export default server;
+server.listen(port);
